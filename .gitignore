@@ -13,6 +13,7 @@ target/
 .idea/.gitignore
 .idea/misc.xml
 .idea/vcs.xml
+.idea/encodings.xml
 *.iws
 *.iml
 *.ipr
