@@ -17,8 +17,8 @@ public class findSecondLargestNumberFromArray {
                 }
             }
         }
-        System.out.println("Max Number       : " + max);
-        System.out.println("Second Max Number: " + secondMax);
+        System.out.println("Max Number        : " + max);
+        System.out.println("Second Max Number : " + secondMax);
     }
 
     public static void main(String[] args) {
