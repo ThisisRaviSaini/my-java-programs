@@ -1,0 +1,24 @@
+package org.example;
+
+import java.util.TreeMap;
+
+public class FindSecondLargestStringFromStringArray {
+
+
+    public static void findSecondLargestStringFromStringArray(String[] strArr) {
+
+        TreeMap<Integer, String> tm = new TreeMap<>();
+
+        for (int i = 0; i < strArr.length; i++) {
+            tm.put(strArr[i].length(), strArr[i]);
+        }
+
+        int largestStringlength = tm.lastEntry().getKey();
+        System.out.println(tm.lowerEntry(largestStringlength));
+    }
+
+    public static void main(String[] args) {
+        String[] strArr = {"Cat", "lion", "horse", "Crocodile"};
+        findSecondLargestStringFromStringArray(strArr);
+    }
+}
