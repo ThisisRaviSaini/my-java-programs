@@ -1,6 +1,6 @@
 package org.example;
 
-public class findSecondLargestNumberFromArray {
+public class FindSecondLargestNumberFromArray {
 
     public static void findSecondLargestNumberFromArray(int[] arr) {
 
