@@ -18,7 +18,6 @@ public class SingletonClass {
     }
 
     public static void main(String[] args) {
-
         SingletonClass instance = SingletonClass.getSingletonObject();
         SingletonClass instance2 = SingletonClass.getSingletonObject();
         System.out.println(instance.hashCode());

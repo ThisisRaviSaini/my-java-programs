@@ -5,7 +5,6 @@ import java.util.Set;
 
 public class LongestCommonSubstringUsingCollection {
 
-
     public static String findLongestCommonSubstringUsingCollection(String str1, String str2) {
         Set<String> subStringOfStr1 = new HashSet<>();
         String longestSub = "";
@@ -23,6 +22,10 @@ public class LongestCommonSubstringUsingCollection {
                     longestSub = str2Sub;
                 }
             }
+        }
+
+        for (int i = 'a'; i < 'z'; i++) {
+            System.out.println(i);
         }
         return longestSub;
     }

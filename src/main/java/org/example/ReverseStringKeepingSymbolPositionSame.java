@@ -2,15 +2,13 @@ package org.example;
 
 import java.util.Arrays;
 
-public class ReverseStringKeepingSymbolPostionSame {
+public class ReverseStringKeepingSymbolPositionSame {
 
-
-    public static void reverseStringKeepingSymbolPostionSame(String str) {
+    public static void reverseStringKeepingSymbolPositionSame(String str) {
 
         char charArr[] = str.toCharArray();
         int first = 0;
         int last = charArr.length - 1;
-
 
         while (first < last) {
             if (!Character.isLetterOrDigit(charArr[first])) {
@@ -29,8 +27,7 @@ public class ReverseStringKeepingSymbolPostionSame {
     }
 
     public static void main(String[] args) {
-
         String str = "Ravi@Saini#";
-        reverseStringKeepingSymbolPostionSame(str);
+        reverseStringKeepingSymbolPositionSame(str);
     }
 }
