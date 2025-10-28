@@ -15,15 +15,13 @@ public class MultiplyTheElementOfArraySkippingEveryElement {
                 } else {
                     num = num * arr[j];
                 }
-
             }
-            outputArr[i]=num;
-
+            outputArr[i] = num;
         }
         System.out.println(Arrays.toString(outputArr));
     }
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
 
         int arr[] = {1, 2, 3, 4, 5};
         //output= {2*3*4*5, 1*3*4*5, 1*2*4*5, 1*2*3*5, 1*2*3*4}
