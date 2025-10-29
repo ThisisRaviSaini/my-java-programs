@@ -1,4 +1,4 @@
-package org.example;
+package org.logical.program;
 
 import java.util.HashSet;
 import java.util.Set;
