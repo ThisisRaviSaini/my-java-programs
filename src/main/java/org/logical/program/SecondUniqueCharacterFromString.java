@@ -37,13 +37,13 @@ public class SecondUniqueCharacterFromString {
             }
         }
 
-        System.out.println("Second Unique Character: " + uniqueElementAl.get(index));
+        System.out.println(pos+" Unique Character: " + uniqueElementAl.get(index));
 
     }
 
     public static void main(String[] args) {
         String str = "aakkaklammz";
-        findSecondUniqueLetter(str, 2);
+        findSecondUniqueLetter(str, 1);
 
     }
 }
