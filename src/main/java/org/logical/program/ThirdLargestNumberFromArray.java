@@ -25,7 +25,6 @@ public class ThirdLargestNumberFromArray {
 
         int[] arr = {5, 4, 6, 3, 8, 6, 5, 9, 10};
         int whichLargestNumber = 3;
-
         thirdLargestNumberFromArray(arr, whichLargestNumber);
     }
 }
