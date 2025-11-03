@@ -18,7 +18,7 @@ public class SecondUniqueCharacterFromString {
         int index = pos - 1;
 
         ArrayList<Character> al = new ArrayList<>();
-
+        ArrayList<Character> uniqueElementAl = new ArrayList<>();
         LinkedHashMap<Character, Integer> lhm = new LinkedHashMap<>();
 
         for (int i = 0; i < charArr.length; i++) {
@@ -29,7 +29,6 @@ public class SecondUniqueCharacterFromString {
             lhm.put(charArr[i], Collections.frequency(al, charArr[i]));
         }
 
-        ArrayList<Character> uniqueElementAl = new ArrayList<>();
 
         for (Map.Entry<Character, Integer> l : lhm.entrySet()) {
             if (l.getValue() == 1) {
@@ -37,7 +36,7 @@ public class SecondUniqueCharacterFromString {
             }
         }
 
-        System.out.println(pos+" Unique Character: " + uniqueElementAl.get(index));
+        System.out.println(pos + " Unique Character: " + uniqueElementAl.get(index));
 
     }
 
