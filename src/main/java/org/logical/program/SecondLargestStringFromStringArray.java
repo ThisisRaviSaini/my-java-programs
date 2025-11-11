@@ -7,25 +7,22 @@ import java.util.TreeMap;
 public class SecondLargestStringFromStringArray {
 
 
-    public static void secondLargestString(String arr[]) {
+    public static void secondLargestString(String[] arr) {
 
         TreeMap<Integer, String> tm = new TreeMap<>();
         for (int i = 0; i < arr.length; i++) {
             tm.put(arr[i].length(), arr[i]);
         }
 
-        System.out.println(tm);
-
-
-        System.out.println(tm.lastEntry().getKey());
-        System.out.println(tm.lowerEntry(tm.lastEntry().getKey()));
-
+        System.out.println("All String with length: " + tm);
+        System.out.println("String with highest Length: " + tm.lastEntry().getKey());
+        System.out.println("Second Largest String:  " + tm.lowerEntry(tm.lastEntry().getKey()));
 
     }
 
     public static void main(String[] args) {
 
-        String strArr[] = {"RaviSaini", "Taruna", "Papa", "Maa"};
+        String[] strArr = {"RaviSaini", "Taruna", "Papa", "Maa"};
         secondLargestString(strArr);
 
     }

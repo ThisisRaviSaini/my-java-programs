@@ -9,8 +9,8 @@ public class FindMinDiffAndElementsOfArrayUsingTreeMapAndHashMap {
     public static void findMinDiffAndElementsOfArray(int[] arr) {
 
         TreeMap<Integer, HashMap<Integer, Integer>> tm = new TreeMap<>();
-
         int minDiff = Integer.MAX_VALUE;
+
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
                 int diff;
@@ -28,14 +28,14 @@ public class FindMinDiffAndElementsOfArrayUsingTreeMapAndHashMap {
         for (Map.Entry<Integer, HashMap<Integer, Integer>> tMap : tm.entrySet()) {
             if (tMap.getKey() == minDiff) {
                 System.out.println("Min Diff :" + tMap.getKey() + " Pair " + tMap.getValue());
+
                 HashMap<Integer, Integer> hhm = tMap.getValue();
+
                 for (Map.Entry<Integer, Integer> m : hhm.entrySet()) {
                     System.out.println("Pair :" + m.getKey());
                     System.out.println("Pair :" + m.getValue());
                 }
             }
-
-
         }
     }
 

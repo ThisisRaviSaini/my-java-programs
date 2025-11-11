@@ -29,20 +29,19 @@ public class SecondUniqueCharacterFromString {
             lhm.put(charArr[i], Collections.frequency(al, charArr[i]));
         }
 
-
         for (Map.Entry<Character, Integer> l : lhm.entrySet()) {
             if (l.getValue() == 1) {
                 uniqueElementAl.add(l.getKey());
             }
         }
 
-        System.out.println(pos + " Unique Character: " + uniqueElementAl.get(index));
+        System.out.println("Index: "+ pos + " Unique Character: " + uniqueElementAl.get(index));
 
     }
 
     public static void main(String[] args) {
         String str = "aakkaklammz";
-        findSecondUniqueLetter(str, 1);
+        findSecondUniqueLetter(str, 2);
 
     }
 }

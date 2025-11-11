@@ -18,11 +18,10 @@ public class ThirdLargestNumberFromArray {
         for (int i = 1; i < whichLargestNumber; i++) {
             last = ts.lower(last);
         }
-        System.out.println("Third last: " + last);
+        System.out.println("Third largest Number: " + last);
     }
 
     public static void main(String[] args) {
-
         int[] arr = {5, 4, 6, 3, 8, 6, 5, 9, 10};
         int whichLargestNumber = 3;
         thirdLargestNumberFromArray(arr, whichLargestNumber);

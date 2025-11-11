@@ -3,7 +3,7 @@ package org.logical.program;
 public class OccurrenceOfCharacterInString {
 
     public static void findOccurrenceOfCharacterInString(String str) {
-        char charArr[] = str.toCharArray();
+        char[] charArr = str.toCharArray();
 
         boolean[] visited = new boolean[charArr.length];
 
@@ -23,10 +23,7 @@ public class OccurrenceOfCharacterInString {
     }
 
     public static void main(String[] args) {
-
         String str = "RaviSaini";
-
         findOccurrenceOfCharacterInString(str);
-
     }
 }

@@ -23,10 +23,6 @@ public class LongestCommonSubstringUsingCollection {
                 }
             }
         }
-
-        for (int i = 'a'; i < 'z'; i++) {
-            System.out.println(i);
-        }
         return longestSub;
     }
 
@@ -36,7 +32,5 @@ public class LongestCommonSubstringUsingCollection {
         String str2 = "nebcdf";
 
         System.out.println(findLongestCommonSubstringUsingCollection(str1, str2));
-
-
     }
 }

@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class MultiplyTheElementOfArraySkippingEveryElement {
 
-    public static void multiplyTheElementOfArray(int arr[]) {
+    public static void multiplyTheElementOfArray(int[] arr) {
         int size = arr.length;
-        int outputArr[] = new int[size];
+        int[] outputArr = new int[size];
         for (int i = 0; i < arr.length; i++) {
             int num = 1;
             for (int j = 0; j < arr.length; j++) {

@@ -34,12 +34,9 @@ public class FindMinDiffAndElementsOfArrayUsingTreeMapAndArrayList {
 
         for (Map.Entry<Integer, ArrayList<Integer>> tSetElement : tm.entrySet()) {
             if (tSetElement.getKey() == minDiffValue) {
-                System.out.println("Min Difference :" + minDiffValue+" Min Diff Pair"+tSetElement.getValue());
+                System.out.println("Min Difference :" + minDiffValue+"  | Min Diff Pair : "+tSetElement.getValue());
             }
-
         }
-
-
     }
 
     public static void main(String[] args) {

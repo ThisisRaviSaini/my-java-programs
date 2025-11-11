@@ -2,8 +2,8 @@ package org.logical.program;
 
 public class OccurrenceOfNumberInArray {
 
-    public static void findOccurence(int arr[]) {
-        boolean visited[] = new boolean[arr.length];
+    public static void findOccurrence(int[] arr) {
+        boolean[] visited = new boolean[arr.length];
 
         for (int i = 0; i < arr.length; i++) {
             int count = 1;
@@ -17,19 +17,13 @@ public class OccurrenceOfNumberInArray {
                     count++;
                     visited[j] = true;
                 }
-
             }
             System.out.println( arr[i] +": "+count);
         }
-
-
     }
 
     public static void main(String[] args) {
-        int arr[] = {10, 30, 10, 20, 40, 10};
-
-        findOccurence(arr);
-
-
+        int[] arr = {10, 30, 10, 20, 40, 10};
+        findOccurrence(arr);
     }
 }

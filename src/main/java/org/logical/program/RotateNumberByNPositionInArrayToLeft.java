@@ -7,8 +7,8 @@ public class RotateNumberByNPositionInArrayToLeft {
 
     public static void rotateNumberByNPositionInArray(int arr[], int pos) {
 
-
         while (pos > 0) {
+
             int first = arr[0];
 
             for (int i = 0; i < arr.length - 1; i++) {

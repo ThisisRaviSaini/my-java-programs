@@ -18,6 +18,6 @@ public class DenominationOfNotesRequired {
 
     public static void main(String[] args) {
         int[] notesArr = {2000, 500, 100, 50, 20, 10};
-        denominationOfNotesRequired(notesArr, 20000);
+        denominationOfNotesRequired(notesArr, 20010);
     }
 }
