@@ -9,21 +9,21 @@ public class OccurrenceOfCharacterInString {
 
         for (int i = 0; i < charArr.length; i++) {
             int count = 1;
-            if(visited[i]==true){
+            if (visited[i] == true) {
                 continue;
             }
             for (int j = 0; j < charArr.length; j++) {
                 if (charArr[i] == charArr[j] && i != j) {
                     count++;
-                    visited[j]=true;
+                    visited[j] = true;
                 }
             }
-            System.out.println(charArr[i] +":"+ count);
+            System.out.println(charArr[i] + ":" + count);
         }
     }
 
     public static void main(String[] args) {
-        String str = "RaviSaini";
+        String str = "Ravi-Saini";
         findOccurrenceOfCharacterInString(str);
     }
 }

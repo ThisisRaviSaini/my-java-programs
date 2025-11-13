@@ -15,6 +15,7 @@ public class ThirdLargestNumberFromArray {
             ts.add(arr[i]);
         }
         Integer last = ts.last();
+
         for (int i = 1; i < whichLargestNumber; i++) {
             last = ts.lower(last);
         }

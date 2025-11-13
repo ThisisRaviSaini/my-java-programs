@@ -10,7 +10,5 @@ public class ArrayToArrayListConversion {
         Integer arr[]={10, 20};
         ArrayList<Integer> al= new ArrayList<>(Arrays.asList(arr));
 
-
-
     }
 }

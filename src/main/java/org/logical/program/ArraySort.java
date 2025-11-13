@@ -17,7 +17,6 @@ public class ArraySort {
         System.out.println(Arrays.toString(arr));
     }
 
-
     public static void main(String[] args) {
         int[] arr = {10, 30, 60, 50, 20, 40, 25, 26};
         sortArray(arr);

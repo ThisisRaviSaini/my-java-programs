@@ -16,6 +16,7 @@ public class DenominationOfNotesRequired {
         System.out.println(hm);
     }
 
+
     public static void main(String[] args) {
         int[] notesArr = {2000, 500, 100, 50, 20, 10};
         denominationOfNotesRequired(notesArr, 20010);

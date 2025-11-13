@@ -13,7 +13,6 @@ public class SingletonClass {
         if (singletonObject == null) {
             singletonObject = new SingletonClass();
         }
-
         return singletonObject;
     }
 

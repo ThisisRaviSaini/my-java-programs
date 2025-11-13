@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class RotateNumberByNPositionInArrayToLeft {
 
 
-    public static void rotateNumberByNPositionInArray(int arr[], int pos) {
+    public static void rotateNumberByNPositionInArray(int[] arr, int pos) {
 
         while (pos > 0) {
 
@@ -24,7 +24,7 @@ public class RotateNumberByNPositionInArrayToLeft {
 
     public static void main(String[] args) {
 
-        int arr[] = {10, 20, 30, 40, 50, 60};
+        int[] arr = {10, 20, 30, 40, 50, 60};
         rotateNumberByNPositionInArray(arr, 3);
     }
 }
