@@ -23,6 +23,7 @@ public class ReverseStringKeepingSymbolPositionSame {
                 last--;
             }
         }
+        
         System.out.println(Arrays.toString(charArr));
     }
 

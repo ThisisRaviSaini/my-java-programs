@@ -13,8 +13,8 @@ public class FindSecondLargestStringFromStringArray {
             tm.put(strArr[i].length(), strArr[i]);
         }
 
-        int largestStringlength = tm.lastEntry().getKey();
-        System.out.println(tm.lowerEntry(largestStringlength));
+        int largestStringLength = tm.lastEntry().getKey();
+        System.out.println(tm.lowerEntry(largestStringLength));
     }
 
     public static void main(String[] args) {
