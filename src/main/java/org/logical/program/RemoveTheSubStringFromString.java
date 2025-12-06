@@ -17,8 +17,30 @@ public class RemoveTheSubStringFromString {
     //withoutString("THIS is a FISH", "is") → "TH a FH"
     //withoutString("THIS is a FISH", "iS") → "TH a FH"
     //withoutString("abxxxab", "xx") → "abxab"
-    
+
+// This Program Does not maintain the Sentence Case
+
+    public static void removeTheSubString(String bigStr, String strNeedToRemoved) {
+
+        bigStr = bigStr.toLowerCase();
+        strNeedToRemoved = strNeedToRemoved.toLowerCase();
+        int lengthOfStrNeedToRemoved = strNeedToRemoved.length();
+
+        StringBuffer finalString = new StringBuffer(bigStr);
+
+        while (finalString.indexOf(strNeedToRemoved) != -1) {
+            int indexOfStrNeedToRemoved = finalString.indexOf(strNeedToRemoved);
+            finalString.delete(indexOfStrNeedToRemoved, indexOfStrNeedToRemoved + lengthOfStrNeedToRemoved);
+            System.out.println(finalString);
+        }
+
+    }
+
     public static void main(String[] args) {
+
+        String bigStr = "MkjtMkx";
+        String strNeedToRemoved = "Mk";
+        removeTheSubString(bigStr, strNeedToRemoved);
 
     }
 }
