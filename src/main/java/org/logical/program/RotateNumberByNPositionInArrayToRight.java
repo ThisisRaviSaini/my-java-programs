@@ -5,10 +5,9 @@ import java.util.Arrays;
 public class RotateNumberByNPositionInArrayToRight {
 
 
-    public static void rotateNumberByNPositionInArrayToRight(int arr[], int pos) {
+    public static void rotateNumberByNPositionInArrayToRight(int[] arr, int pos) {
 
         while (pos > 0) {
-
             int last = arr[arr.length - 1];
 
             for (int i = arr.length - 1; i > 0; i--) {

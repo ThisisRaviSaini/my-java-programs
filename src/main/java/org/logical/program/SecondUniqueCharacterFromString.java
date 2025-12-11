@@ -1,9 +1,6 @@
 package org.logical.program;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 public class SecondUniqueCharacterFromString {
 
@@ -13,7 +10,6 @@ public class SecondUniqueCharacterFromString {
 
 
     public static void findSecondUniqueLetter(String str, int pos) {
-
         char[] charArr = str.toCharArray();
         int index = pos - 1;
 
@@ -34,9 +30,7 @@ public class SecondUniqueCharacterFromString {
                 uniqueElementAl.add(l.getKey());
             }
         }
-
         System.out.println("Index: "+ pos + " Unique Character: " + uniqueElementAl.get(index));
-
     }
 
     public static void main(String[] args) {
