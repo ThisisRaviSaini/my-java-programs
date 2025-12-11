@@ -22,11 +22,10 @@ public class RemoveTheSubStringFromString {
 
     public static void removeTheSubString(String bigStr, String strNeedToRemoved) {
 
-        bigStr = bigStr.toLowerCase();
         strNeedToRemoved = strNeedToRemoved.toLowerCase();
         int lengthOfStrNeedToRemoved = strNeedToRemoved.length();
 
-        StringBuffer finalString = new StringBuffer(bigStr);
+        StringBuffer finalString = new StringBuffer(bigStr.toLowerCase());
 
         while (finalString.indexOf(strNeedToRemoved) != -1) {
             int indexOfStrNeedToRemoved = finalString.indexOf(strNeedToRemoved);
@@ -38,8 +37,8 @@ public class RemoveTheSubStringFromString {
 
     public static void main(String[] args) {
 
-        String bigStr = "MkjtMkx";
-        String strNeedToRemoved = "Mk";
+        String bigStr = "abxxxab";
+        String strNeedToRemoved = "xx";
         removeTheSubString(bigStr, strNeedToRemoved);
 
     }

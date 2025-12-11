@@ -2,7 +2,6 @@ package org.logical.program;
 
 public class FactorialUsingRecursion {
 
-
     static int findFactorial(int num) {
         if (num == 0 || num == 1) {
             return 1;

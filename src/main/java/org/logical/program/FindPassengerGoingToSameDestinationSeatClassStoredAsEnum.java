@@ -39,9 +39,7 @@ public class FindPassengerGoingToSameDestinationSeatClassStoredAsEnum {
         Iterator<HashMap<String, Object>> itr = listOfPassengers.iterator();
 
         while (itr.hasNext()) {
-
             HashMap<String, Object> hm = itr.next();
-
             for (Map.Entry<String, Object> m : hm.entrySet()) {
                 if (m.getValue().equals("Bangalore")) {
                     System.out.println(hm);
