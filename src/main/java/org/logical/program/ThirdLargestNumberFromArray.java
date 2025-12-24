@@ -5,7 +5,7 @@ import java.util.TreeSet;
 public class ThirdLargestNumberFromArray {
 
 
-    //input: {5,4,6,3,8,6,5,9}
+     //input: {5,4,6,3,8,6,5,9}
     //output:  Third Largest Number:  6
 
     public static void thirdLargestNumberFromArray(int[] arr, int whichLargestNumber) {
